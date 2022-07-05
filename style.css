@@ -1,0 +1,799 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    height: 5rem;
+    width: 100%;
+    background: rgb(5, 14, 26, 0.8);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+
+.logo{
+    margin-left: 2rem;
+}
+
+.buttonContainer{
+    display: flex;
+    height: 100%;
+}
+
+.button{
+    padding: 0 2rem;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonLink{
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover{
+    background: rgb(3, 9, 17);
+
+}
+
+.home{
+    height: 50rem;
+    background: rgb(5, 14, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+
+.aboutInfoContainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.aboutInfo > h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    line-height: 1;
+}
+
+.dp{
+    height: 20rem;
+    border-radius: 50%;
+}
+
+.aboutInfo > p{
+    color: #ccc;
+    font-size: 1.4rem;
+    width: 80%;
+    line-height: 1.75;
+}
+
+.makeWhite{
+    color: white;
+}
+
+.playLink{
+    color: white;
+}
+
+.homeLink{
+    text-decoration: none;
+    color: #ccc;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all 0.1s ease-in-out;
+    font-size: 1.4rem;
+}
+
+.homeLink:hover{
+    color: rgb(5, 14, 26);
+    background: white;
+}
+
+.fontawesomebuttons{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects{
+    background: rgb(3, 9, 17);
+    padding: 3rem 3rem;
+}
+
+.projects > h1{
+    color: white;
+    position: relative;
+    /* left: 5rem; */
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    margin: 7rem 0;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card > *{
+    margin: 0 4rem;
+}
+
+.card > img{
+    height: 20rem;
+    box-shadow: rgb(12, 16, 54) 0px 0px 0px 3px, rgb(156, 164, 182) 0px 0px 0px 6px;
+}
+
+.cardInfoContainer > h2{
+    font-size: 3rem;
+    color: white;
+}
+
+.skillButtons{
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0 0.25rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#android{
+    background: #ddd;
+    color: black;
+}
+
+#gamedev{
+    background: rgb(255, 255, 82);
+    color: black;
+}
+
+#unity{
+    background: rgb(77, 77, 255);
+    color: white;
+}
+
+#csharp{
+    background: rgb(68, 161, 68);
+    color: white;
+}
+
+#gamedes{
+    background: rgb(255, 189, 67);
+    color: black;
+}
+
+.cardInfoPara{
+    color: #ddd;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    line-height: 1.75;
+}
+
+#secondCard{
+    flex-direction: row-reverse;
+}
+
+.playButtonContainer{
+    display: flex;
+}
+
+.playButton{
+    color: #ddd;
+    padding: 1rem 3rem;
+    border: 2px solid #ddd;
+    font-size: 1.3rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    border-radius: 4px;
+}
+
+.playButtonAnchor{
+    text-decoration: none;
+}
+
+
+.playButton::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #eee;
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.playButton:hover{
+    color: black;
+}
+
+.playButton:hover::before{
+    width: 200%;
+}
+
+#tunnel::before{
+    left: 0;
+}
+
+#squareNinja::before{
+    right: 0;
+}
+
+.contact{
+    background: rgb(5, 14, 26);
+    padding: 3rem 3rem;
+}
+
+.contact > h1{
+    color: white;
+    position: relative;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contactInfoContainer{
+    display: flex;
+    padding: 2rem 3rem;
+    justify-content: center;
+}
+
+.contactInfo > p{
+    font-size: 1.35rem;
+    color: #ddd;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.iconContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.contactButtonContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+i{
+    font-size: 2rem;
+    color: #fff;
+    margin: 1rem 1rem;
+
+}
+
+.contactDescription{
+    font-size: 1.5rem;
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.contactDescription:hover{
+    color: white;
+}
+
+.contactDescription::after{
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    background: white;
+    height: 1px;
+    width: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contactDescription:hover::after{
+    width: 100%;
+}
+
+.contactButton{
+    margin: 0 3rem;
+}
+
+footer{
+    height: 3rem;
+    background:rgb(3, 9, 17);
+}
+
+
+
+/* Media queries code */
+
+@media(max-width: 1500px){
+
+    .card > img{
+        height: 17.5rem;
+    }
+}
+
+@media(max-width: 1420px){
+
+    .card > img{
+        height: 15rem;
+    }
+
+    .cardInfoContainer > h2{
+        font-size: 2.5rem;
+    }
+
+    .cardInfoPara{
+        font-size: 1.1rem;
+    }
+
+    .playButton{
+        font-size: 1.1rem;
+    }
+
+    .projects > h1{
+        margin-bottom: none;
+    }
+}
+
+@media(max-width: 1340px){
+
+    .card > img{
+        height: 13rem;
+    }
+
+    .cardInfoContainer > h2{
+        font-size: 2rem;
+    }
+
+    .cardInfoPara{
+        font-size: 1rem;
+    }
+
+    .playButton{
+        font-size: 1rem;
+    }
+
+    .projects > h1{
+        margin-bottom: none;
+    }
+}
+
+@media(max-width: 1275px)
+{
+    .skillButtons{
+        font-size: 0.85rem;
+    }
+}
+
+@media(max-width: 1220px)
+{
+
+
+    .card{
+        flex-direction: column;
+    }
+
+    .card > img{
+        width: 60%;
+        height: auto;
+    }
+
+    .cardInfoContainer > *{
+        display: flex;
+        justify-content: center;
+    }
+
+    .cardInfoContainer > h2{
+        font-size: 3rem;
+    }
+
+    .cardInfoPara{
+        font-size: 1.3rem;
+    }
+
+    .skillButtons{
+        font-size: 1.2rem;
+    }
+
+    #secondCard{
+        flex-direction: column;
+    }
+
+    .projects > h1{
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .contactDescription{
+        font-size: 1.25rem;
+    }
+
+    .contact > h1{
+        font-size: 2.5rem;
+    }
+
+    .contactInfo > p{
+        font-size: 1.25rem;
+    }
+}
+
+@media(max-width: 1100px){
+
+    .contactDescription{
+        font-size: 1rem;
+    }
+
+    .contact > h1{
+        font-size: 2.5rem;
+    }
+
+    .contactInfo > p{
+        font-size: 1rem;
+    }
+
+    .contactButton{
+        margin: 0 2rem;
+    }
+}
+
+@media(max-width: 920px){
+
+    .contactDescription{
+        font-size: 0.9rem;
+    }
+
+    .contact > h1{
+        font-size: 2.25rem;
+    }
+
+    .contactInfo > p{
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 900px){
+
+    .contactButtonContainer{
+        flex-direction: column;
+    }
+
+    .contactDescription{
+        font-size: 1.25rem;
+    }
+
+    .contact > h1{
+        font-size: 2.5rem;
+    }
+
+    .contactInfo > p{
+        font-size: 1.25rem;
+    }
+}
+
+@media(max-width: 850px)
+{
+    .cardInfoContainer > h2{
+        font-size: 2.5rem;
+    }
+
+    .skillButtons{
+        font-size: 1rem;
+    }
+
+    header{
+        display: none;
+    }
+
+}
+
+@media(max-width: 800px)
+{
+    .card > img{
+        width: 80%;
+    }
+
+    .cardInfoContainer > h2{
+        font-size: 2.5rem;
+    }
+
+    .skillButtons{
+        font-size: 1rem;
+    }
+
+    .aboutInfo > h1{
+        font-size: 2.5rem;
+    }
+
+    .aboutInfo > p{
+        font-size: 1.25rem;
+    }
+
+
+}
+
+@media(max-width: 700px)
+{
+    .aboutInfo > h1{
+        font-size: 2.25rem;
+    }
+
+    .aboutInfo > p{
+        font-size: 1.25rem;
+    }
+
+    .skillButtons{
+        font-size: 0.75rem;
+    }
+}
+
+@media(max-width: 610px)
+{
+
+    .skillButtons{
+        font-size: 0.5rem;
+    }
+
+    .cardInfoPara{
+        font-size: 1rem;
+    }
+
+    .contact{
+        padding: 3rem 1rem;
+    }
+
+    .projects{
+        padding: 3rem 1rem;
+    }
+
+    .home{
+        padding: 0 1rem;
+    }
+}
+
+@media(max-width: 550px){
+
+    .contactDescription{
+        font-size: 0.9rem;
+    }
+
+    .contact > h1{
+        font-size: 2.25rem;
+    }
+
+    .contactInfo > p{
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 521px)
+{
+    .aboutInfo > h1{
+        font-size: 2rem;
+    }
+
+    .aboutInfo > p{
+        font-size: 1.25rem;
+        width: 90%;
+    }
+    
+    .contact{
+        padding: 1rem;
+    }
+}
+
+@media(max-width: 480px){
+    .contact > h1{
+        font-size: 1.75rem;
+    }
+
+    .contactButton{
+        margin: 0;
+    }
+
+    .aboutInfo > h1{
+        font-size: 1.75rem;
+    }
+
+    .aboutInfo > p{
+        font-size: 1.1rem;
+    }
+
+    .contactInfo > p{
+        margin-bottom: 1rem;
+    }
+
+    .contact > h1{
+        margin-bottom: 1rem;
+    }
+}
+
+@media(max-width: 400px)
+{
+    .aboutInfo > p{
+        font-size: 1rem;
+        margin: auto;
+        width: 90%;
+    }
+
+    .aboutInfo > h1{
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .contact > h1{
+        font-size: 2rem;
+    }
+
+    .projects > h1{
+        font-size: 2rem;
+    }
+
+    .cardInfoPara{
+        font-size: 1rem;
+    }
+
+    .cardInfoContainer > h2{
+        font-size: 1.75rem;
+    }
+
+    .card > img{
+        width: 60%;
+    }
+
+
+
+}
+
+@media(max-width: 380px)
+{
+    .aboutInfo > h1{
+        font-size: 1.5rem;
+    }
+}
+
+/* .contactButtonContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.contactButtons{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.contactButtonDivs{
+    padding: 3rem 3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.contactButtonDivs > *{
+    color: #ddd;
+    font-size: 1.5rem;
+    padding: 0 0.25rem;
+} */
+/* .cardContainer{
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.card{
+    position: relative;
+}
+
+.card > img{
+    width: 60rem;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.cardImage{
+    transition: all 0.3s ease-in-out;
+}
+
+.cardInfo{
+    height: 4rem;
+    width: 60rem;
+    background: rgba(0,0,0,0.8);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    bottom: 0;
+    left: 0;
+}
+
+.cardHeading{
+    height: 4rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+    left: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.headingContainer{
+    display: flex;
+}
+
+.toolContainer{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 5rem;
+}
+
+.tools{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+}
+
+#unity{
+    background: blue;
+}
+
+#c{
+    background: red;
+}
+
+#gamedesign{
+    background: rgb(123, 143, 9);
+}
+
+#gamedev{
+    background: rgb(10, 139, 5);
+}
+
+.cardCover:hover + .cardInfo{
+    height: 20rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.cardCover{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.hiddenInfo{
+    color: white;
+} */
